@@ -131,7 +131,7 @@ namespace Ashsvp
 
         private void Update()
         {
-            if (CanDrive && CanAccelerate)
+            if (!GameController.isMenu && CanDrive && CanAccelerate)
             {
                 accelerationInput = Input.GetAxis("Vertical");
                 steerInput = Input.GetAxis("Horizontal");
